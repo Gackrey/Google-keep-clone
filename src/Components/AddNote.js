@@ -89,7 +89,7 @@ const AddNote = () => {
                             }
                         </select>
                         <ColorLensOutlined
-                            style={{ position: "relative" }}
+                            style={{ position: "relative",marginLeft:"1rem" }}
                             onMouseEnter={() => setcolorDisplaystate("flex")}
                             onMouseLeave={() => setcolorDisplaystate("none")}
                         />

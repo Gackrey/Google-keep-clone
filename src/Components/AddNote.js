@@ -35,7 +35,8 @@ const AddNote = () => {
             body: body,
             tags: tags,
             bgcolor: notecolor,
-            pinned: pinnedstate
+            pinned: pinnedstate,
+            timestamp:Date.now()
         }
         if (heading !== '' || body !== '') {
             dispatch({ type: 'ADD_NOTE', payload: newNote })

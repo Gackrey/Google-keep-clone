@@ -3,9 +3,12 @@ import Note from './Note'
 import Editnotes from './Editnotes'
 
 const ShowNotes = ({ notelist }) => {
-    const Pinned = notelist.filter(item => item.pinned === true);
+    const sortedNotes = notelist.sort(function (x, y) {
+        return y.timestamp - x.timestamp;
+    })
+    const Pinned = sortedNotes.filter(item => item.pinned === true);
     const countPinned = Pinned.length;
-    const Unpinned = notelist.filter(item => item.pinned === false);
+    const Unpinned = sortedNotes.filter(item => item.pinned === false);
     const countUnpinned = Unpinned.length;
     const [displayState, setDisplay] = useState("none");
     const [updateItem, setupdateItem] = useState('');

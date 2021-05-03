@@ -64,7 +64,7 @@ const AddNote = () => {
                     alt=""
                     onClick={Pinnedfun} />
                 <textarea
-                    style={{ backgroundColor: notecolor }}
+                    style={{ backgroundColor: notecolor,maxHeight:"100px" }}
                     type="text"
                     className="body"
                     placeholder="Take a note...."

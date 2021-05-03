@@ -10,7 +10,7 @@
   align-items: center;
 }
 .navbar > span{
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 .homeview {
@@ -31,11 +31,14 @@
   border: none;
   outline: none;
 }
-.pin {
+.pin,.note-pin {
   opacity: 0.7;
   position: relative;
   top: 5px;
   padding: 3px;
+}
+.note-pin {
+  visibility: hidden;
 }
 .pin:hover {
   border-radius: 50%;
@@ -71,6 +74,7 @@
   border-radius: 16px;
 }
 .notes {
+  visibility: visible;
   position: relative;
   margin: 10px;
   box-shadow: 0px 0px 4px 0px black;
@@ -209,6 +213,16 @@
 }
 .sidebar-elem:hover{
   background-color: rgba(95,99,104,0.157);
+}
+.note-footer{
+  position: relative;
+  visibility: hidden;
+}
+.notes:hover .note-pin{
+  visibility: visible;
+}
+.notes:hover .note-footer{
+  visibility: visible;
 }
 @media only screen and (max-width: 668px) {
   .homeview {

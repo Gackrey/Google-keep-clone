@@ -24,14 +24,14 @@ const DeleteNote = ({ item, setDisplay, setUpdate }) => {
                     fontSize: "22px",
                     fontWeight: "bold",
                     width: "100%",
-                    backgroundColor: item.bgcolor,
+                    backgroundColor: "transparent"
                 }}
                     onClick={() => { setDisplay("flex"); setUpdate(item) }}
                 >
                     {item.heading}
                 </div>
                 <img
-                    className="pin"
+                    className="note-pin"
                     src={item.pinned ? Item_pinned : Item_not_pinned}
                     alt=""
                     onClick={() =>
@@ -41,10 +41,10 @@ const DeleteNote = ({ item, setDisplay, setUpdate }) => {
             <div onClick={() => { setDisplay("flex"); setUpdate(item) }}>
                 <span className="tagbox" >{item.tags}</span>
             </div>
-            <div style={{ backgroundColor: item.bgcolor }} onClick={() => { setDisplay("flex"); setUpdate(item) }}>
+            <div style={{ backgroundColor: "transparent" }} onClick={() => { setDisplay("flex"); setUpdate(item) }}>
                 {item.body}
             </div>
-            <div style={{ position: "relative" }}>
+            <div className="note-footer">
                 <ColorLensOutlined
                     onMouseEnter={() => setcolorDisplaystate("flex")}
                     onMouseLeave={() => setcolorDisplaystate("none")}

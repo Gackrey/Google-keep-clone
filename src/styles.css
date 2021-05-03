@@ -265,4 +265,10 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
+  .note-pin{
+    visibility: visible;
+  }
+  .note-footer{
+    visibility: visible;
+  }
 }

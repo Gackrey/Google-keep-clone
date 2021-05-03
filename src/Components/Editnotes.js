@@ -48,7 +48,7 @@ const Editnotes = ({ item, display, setDisplay, type }) => {
                     onChange={(e) => setHeading(e.target.value)}
                 />
                 <textarea
-                    style={{ backgroundColor: item.bgcolor,maxHeight:"100px" }}
+                    style={{ backgroundColor: item.bgcolor,maxHeight:"120px" }}
                     type="text"
                     className="body"
                     placeholder="Take a note...."

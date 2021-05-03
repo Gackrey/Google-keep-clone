@@ -107,6 +107,7 @@
 }
 .colorChooserNote{
   left: 0px;
+  top: -101px;
 }
 .send {
   position: relative;
@@ -150,7 +151,7 @@
   height: 100vh;
   background-color: rgba(0,0,0,.8);
   z-index: 1;
-  pointer-events: none;
+  pointer-events: visible;
 }
 .inner-edit-box{
   margin: 0 1rem;
@@ -215,6 +216,9 @@
   background-color: rgba(95,99,104,0.157);
 }
 .note-footer{
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem 0;
   position: relative;
   visibility: hidden;
 }
